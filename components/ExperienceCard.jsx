@@ -21,7 +21,7 @@ const ExperienceCard = ({ data }) => {
 				>
 					<CardBody className="">
 						<img
-							src={data.companylogo.src}
+							src={`${process.env.IMAGE_BASE}/${data.companylogo.src}`}
 							style={{
 								objectFit: "cover",
 								left: 0,

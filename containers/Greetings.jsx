@@ -49,7 +49,8 @@ const Greetings = () => {
 									</div> */}
 								</Col>
 								<Col lg="6">
-									 <img src={bobImage.src} style={{width:'100%'}} />
+								
+									 <img src={`${process.env.IMAGE_BASE}/${bobImage.src}`} style={{width:'100%'}} />
 								</Col>
 							</Row>
 						</div>

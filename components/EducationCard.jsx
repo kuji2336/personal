@@ -11,7 +11,7 @@ const EducationCard = ({ education }) => {
 				<CardBody>
 					<div className="d-flex px-3">
 						
-						<img src={education.logo.src} className="education-image"/>
+						<img src={`${process.env.IMAGE_BASE}/${education.logo.src}`} className="education-image"/>
 						<div className="pl-4">
 							<h5 className="text-info">
 								{education.schoolName}

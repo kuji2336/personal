@@ -10,7 +10,8 @@ const Stack = ({ stack }) => {
       <Card className="shadow mt-4" style={{height:'inherit'}}>
         <CardBody>
           <div className="d-flex px-3 align-items-center">
-            <img src={stack.logo.src} style={{ height: 100, width: 100, objectFit:'contain'}} />
+          
+            <img src={`${process.env.IMAGE_BASE}/${stack.logo.src}`} style={{ height: 100, width: 100, objectFit:'contain'}} />
             <div className="pl-4">
               <h5 className="text-info">{stack.name}</h5>
               {stack.details.length ? (

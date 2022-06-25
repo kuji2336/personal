@@ -21,7 +21,7 @@ const ExperienceCard = ({ data }) => {
 				>
 					<CardBody className="">
 						<img
-							src={data.companylogo}
+							src={data.companylogo.src}
 							style={{
 								objectFit: "cover",
 								left: 0,
@@ -34,7 +34,7 @@ const ExperienceCard = ({ data }) => {
 								borderRadius: "50%",
 							}}
 							className="shadow mb-3"
-							alt={data.companylogo}
+							alt={data.companylogo.src}
 						/>
 						<CardTitle tag="h4" className="mb-2">
 							{data.company}
@@ -45,7 +45,8 @@ const ExperienceCard = ({ data }) => {
 						<CardSubtitle>{data.date}</CardSubtitle>
 						<CardText
 							tag="div"
-							className="description my-3 text-left"
+							style={{fontSize:15}}
+							className="description my-3 text-center"
 						>
 							{data.desc}
 							<ul>

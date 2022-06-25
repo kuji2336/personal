@@ -21,8 +21,9 @@
 }
 
 #nav-title {
-	font-family: Augestina;
 	text-transform: capitalize;
+    font-family: cursive;
+    font-weight: bold;
 }
 
 :root {
@@ -627,7 +628,7 @@ pre code {
 }
 @media (min-width: 1200px) {
 	.container {
-		max-width: 1040px;
+		max-width: 1300px;
 	}
 }
 
@@ -5155,7 +5156,7 @@ a.badge-success.focus {
 
 .badge-info {
 	color: #fff;
-	background-color: #11cdef;
+	background-color: #00DC84;
 }
 a.badge-info:hover,
 a.badge-info:focus {
@@ -13851,7 +13852,7 @@ a.text-success:focus {
 }
 
 .text-info {
-	color: #11cdef !important;
+	color: #00DC84!important;
 }
 
 a.text-info:hover,
@@ -14409,9 +14410,6 @@ button.bg-lighter:focus {
 	background: linear-gradient(35deg, #2dce89 0, #2dcecc 100%) !important;
 }
 
-.bg-gradient-info {
-	background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
-}
 
 .bg-gradient-warning {
 	background: linear-gradient(35deg, #fb6340 0, #fbb140 100%) !important;
@@ -14704,9 +14702,6 @@ button.section-darker:focus {
 	background: linear-gradient(35deg, #2dce89 0, #2dcecc 100%) !important;
 }
 
-.bg-gradient-info {
-	background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
-}
 
 .bg-gradient-warning {
 	background: linear-gradient(35deg, #fb6340 0, #fbb140 100%) !important;
@@ -18171,7 +18166,8 @@ textarea[resize="horizontal"] {
 	top: 0;
 	z-index: -1;
 	width: 100%;
-	height: 100%;
+	height: 89%;
+	background-color: #231F20;
 }
 .section-shaped .shape span {
 	position: absolute;
@@ -20481,7 +20477,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .headroom--not-top {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	background-color: #172b4d !important;
+	background-color: #231F20 !important;
 	box-shadow: 0 1px 10px rgba(130, 130, 134, 0.1);
 }
 

@@ -1,10 +1,21 @@
 import emoji from "react-easy-emoji";
+import stuLogo from "./public/img/icons/common/stu.webp"
+import bulgaria from "./public/img/icons/common/bg.jpeg"
+import ebg from "./public/img/icons/common/ebg.png"
+import spinom from "./public/img/icons/common/spin.jpeg"
+import vue from "./public/img/icons/common/vue.png"
+import html from  "./public/img/icons/common/html.webp"
+import css from  "./public/img/icons/common/css.png"
+import jss from  "./public/img/icons/common/jss.png"
+import reactlogo from  "./public/img/icons/common/reactlogo.png"
+import jquer from  "./public/img/icons/common/jquer.png"
+import ui from  "./public/img/icons/common/ui.png"
 
 export const greetings = {
-	name: "Hanzla Tauqeer",
-	title: "Hi all, I'm Hanzla",
+	name: "Kuji Bolkvadze",
+	title: "Hi, I'm Kuji",
 	description:
-		"I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.",
+		"Front-End Developer from Georgia with 2+ years of experience in this industry",
 	resumeLink:
 		"https://drive.google.com/file/d/1Jj4QvvMMhRZQrxngrvlhmuTLhgcisaAp/view?usp=sharing",
 };
@@ -16,11 +27,8 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks = {
-	facebook: "https://www.facebook.com/1hanzla100",
-	instagram: "https://www.instagram.com/1hanzla100",
-	twitter: "https://twitter.com/1hanzla100",
-	github: "https://github.com/1hanzla100",
-	linkedin: "https://www.linkedin.com/in/1hanzla100/",
+	github: "https://github.com/kuji2336",
+	linkedin: "https://www.linkedin.com/in/kuji-bolkvadze-a71259206/",
 };
 
 export const skillsSection = {
@@ -202,72 +210,82 @@ export const SkillBars = [
 
 export const educationInfo = [
 	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
+		schoolName: "Georgian Technical University",
+		subHeader: "Bachelor of GIS (Geographic Information System)",
+		logo:stuLogo,
+		duration: "September 2019 - Current",
+		desc: "Complete special requests for various Agencies by utilizing existing data, analyzing results, and producing reports, maps, and supporting documentation",
+	},
+	{
+		schoolName: "New Horizons Bulgaria:",
+		subHeader: "IT Training and Certification",
+		logo:bulgaria,
+		duration: "March 2020 - December 2020",
+		desc: "IT and business training courses, including Microsoft, IBM, Information Security, CompTIA, VMware, ITIL, Project Management from New Horizons Bulgaria.",
 	},
 ];
 
 export const experience = [
 	{
-		role: "API Engineer",
-		company: "Duseca Software",
-		companylogo: "/img/icons/common/dusecaSoftware.jpg",
-		date: "Jan 2022 – Mar 2022",
-		desc: "I worked as API Engineer on a Kale App. Kale is a community platform for the creation of social reviews based on verified transactions. I built Fully Optimized and High Performance RESTful APIs using Django, DjangoRESTFramework, PostgresSQL, JWT Authentication, AWS, Integrated Plaid APIs for Fetching Bank Transactions, Integrated Sentry for monitoring Django Server and deployed the API on Heroku Server.",
+		role: "Front-End Developer",
+		company: "Ebay Georgia",
+		companylogo: ebg,
+		date: "Jun 2019 – Jan 2021",
+		desc: "EBG is online E-commerce platform which provides us over a million products placed on Ebay.com",
 		// descBullets: [
 		// 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
 		// 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
 		// ],
 	},
 	{
-		role: "Full Stack Developer",
-		company: "Bleed-AI",
-		companylogo: "/img/icons/common/bleedAI.jpg",
-		date: "Sept 2021 - Oct 2021",
-		desc: "Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.",
-	},
-	{
-		role: "Backend Developer",
-		company: "Wapidu",
-		companylogo: "/img/icons/common/wapidu.jpg",
-		date: "Sept 2021",
-		desc: "Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.",
+		role: "Front-End Developer",
+		company: "Spinom Digital",
+		companylogo: spinom,
+		date: "Feb 2021 – Current",
+		desc: "Spinom Digital builds digital products for medium-size and large companies and their clients",
+		// descBullets: [
+		// 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+		// 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		// ],
 	},
 ];
 
 export const projects = [
-	{
-		name: "AtlasMart",
-		desc: "With Atlas Mart, it’s easy to find the products with the best price and ship them straight to your door.",
-		link: "https://atlasmart.netlify.app/",
+	{   
+		bgCover:"https://spinom.digital/wp-content/uploads/2019/01/biblusi.png",
+		name: "Biblusi.ge",
+		desc: "Biblusi is the largest chain of stores offering books and publishing products in Georgia. With twelve years of operating experience in the market, the company is represented by sixty branches across the country. Biblusi aims to make books accessable throughout Georgia and encaurage people to love reading. To achieve this, Biblusi tries to create a “unique environment” for customers offering large variety of products and best service.",
+		link: "https://biblusi.ge/",
 	},
-	{
-		name: "Technota (Forum)",
-		desc: "Get hands-on experience in technical skills with Technota",
-		link: "https://technota.netlify.app/",
+	{   
+		bgCover:'https://spinom.digital/wp-content/uploads/2018/12/palitral.ge_.png',
+		name: "Palitral.ge",
+		desc: "Publishing House Palitra L is known as the main innovator in the Georgian publishing space. It published the most diverse literature in printed, electronic format as well as audio books. By increasing the availability of products throughout the country, company promotes knowledge and raises literacy. Palitra L was the first to create original 3D books using new technologies and started highly-important projects like “become a Bestseller Authos”, “Guda Audio Books”, “Maculiteratura”, etc. As a result of sixteen years of operation, the company has a reputation of a reliable partner and has stable business relationship with leading publishers of agencies around the world.",
+		link: "https://palitral.ge/",
 	},
-	{
-		name: "Shopaza (Ecommerce)",
-		desc: "Now your reach to all your favorite entertainment and luxury items is just one touch apart",
-		link: "https://shopaza.herokuapp.com/",
+	{   
+		bgCover:'https://spinom.digital/wp-content/uploads/2018/12/ebg.ge_.png',
+		name: "EBG.ge",
+		desc: "EBG is the official partner of eBay.com, the largest Georgian online store, which gives Georgian customers a unique opportunity to purchase more than a billion eBay.com products online, in Georgian, using national currency, by installments and warranty, after which they bring the parcel from the USA to Georgia, delivering to customers’ addresses in more than 40 regions of the country.",
+		link: "https://ebg.ge/",
 	},
-	{
-		name: "MMFmelody (Blog)",
-		desc: "Here you will find amazing tips about health, beauty, and modern-day life.",
-		// github: "https://github.com/1hanzla100",
-		link: "https://mmfmelody.herokuapp.com/",
+	{   
+		bgCover:'https://spinom.digital/wp-content/uploads/2018/12/litbox.ge_.png',
+		name: "Litbox.ge",
+		desc: "Litbox is a book box subscription service. According to the terms of the service, users receive a literature box on a monthly basis based on a one-time subscription. Well-known representatives of literary circles, as well as specialists in various fields participate in the selection of books. In the individual box, the books are distributed according to the genres and sub-genres indicated by the user at the time of subscription.",
+		link: "https://litbox.ge/",
 	},
-	{
-		name: "Developer-Portfolio",
-		desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-		github: "https://github.com/1hanzla100/developer-portfolio",
-		link: "https://developer-portfolio-1hanzla100.vercel.app/",
+	{   
+		bgCover:'https://spinom.digital/wp-content/uploads/2019/01/guda.png',
+		name: "Gudabooks.ge",
+		desc: "Gudabooks is the project of Publishing House Palitra L, which offers audio books to its customers. With Gudabooks, customers can read anywhere and anytime in car, train or airplane, cycling, walking, standing in line, exercising or when just relaxing. To use Gudabooks, customer buys audio books on the website and books can be listened online or offline using Guda application, which is synchronized with the Gudabooks.ge-s user’s personal library..",
+		link: "https://gudabooks.ge/",
+	},
+	{   
+		bgCover:'https://spinom.digital/wp-content/uploads/2019/01/inventor.ge_.png',
+		name: "Inventors.ge",
+		desc: "Inventor.ge is an online platform for new and used car parts. The company assists individuals and legal entities in finding or distributing auto parts for any type of vehicle. With the help of the company’s application, call center or Facebook page, the customer can find the desired auto part at the lowest price on the market, without any commission or extra time resources, they can buy online and get the package to the desired address.",
+		link: "https://play.google.com/store/apps/details?id=ge.viaro.client2",
 	},
 ];
 
@@ -283,3 +301,73 @@ export const feedbacks = [
 			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.",
 	},
 ];
+
+
+
+export const stackDetails = [
+	{
+		name:'HTML 5',
+		logo:html,
+		details:[
+			{name:'Pug'},
+			{name:'Semantic HTML'},
+		]
+	},
+	{
+		name:'CSS3',
+		logo:css,
+		details:[
+			{name:'SCSS'},
+			{name:'Tailwind CSS'},
+			{name:'Bootstrap'},
+			{name:'Bootstrap Vue'},
+		]
+	},
+	{
+		name:'JavaScript (ES6)',
+		logo:jss,
+		details:[
+		]
+	},
+{
+	name:'Vue.js',
+	logo:vue,
+	details:[
+		{name:'Vuex'},
+		{name:'Vuetify'},
+		{name:'vue-router'},
+		{name:'Nuxt.js'},
+	]
+},
+{
+	name:'React.js',
+	logo:reactlogo,
+	details:[
+		{name:'Redux/Redux Toolkit'},
+		{name:'react-router'},
+		{name:'Material Ui'},
+		{name:'Styled Components'},
+		{name:'React Query'},
+	]
+},
+{
+	name:'React Native',
+	logo:reactlogo,
+	details:[]
+},
+{
+	name:'JQuery',
+	logo:jquer,
+	details:[]
+},
+{
+	name:'Design systems',
+	logo:ui,
+	details:[
+		{name:'Figma'},
+		{name:'Zeplin'},
+		{name:'Adobe XD'},
+	]
+},
+
+]

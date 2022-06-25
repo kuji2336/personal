@@ -1,32 +1,41 @@
 import React from "react";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+// import required modules
+import { EffectCards } from "swiper";
 import { projects } from "../portfolio";
 import { Container, Row } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
 import { Fade } from "react-reveal";
 
 const Projects = () => {
-	return (
-		<section className="section section-lg">
-			<Container>
-				<div className="d-flex p-4">
-					<div>
-						<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-							<i className="ni ni-laptop text-info" />
-						</div>
-					</div>
-					<div className="pl-4">
-						<h4 className="display-3 text-info">Projects</h4>
-					</div>
-				</div>
-				<Row className="row-grid align-items-center">
-					{projects.map((data, i) => {
-						return <ProjectsCard key={i} data={data} />;
-					})}
-				</Row>
-			</Container>
-		</section>
-	);
+  return (
+    <section className="section section-lg">
+      <Container>
+        <div className="d-flex p-4">
+          <div>
+            <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
+              <i className="ni ni-laptop text-info" />
+            </div>
+          </div>
+          <div className="pl-4">
+            <h4 className="display-3 text-info">Projects</h4>
+          </div>
+        </div>
+        <Swiper effect={"cards"} grabCursor={true} modules={[EffectCards]} className="mySwiper">
+          {projects.map((data, i) => {
+            return (
+              <SwiperSlide>
+                <ProjectsCard key={i} data={data} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </Container>
+    </section>
+  );
 };
 
 export default Projects;

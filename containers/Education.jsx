@@ -5,7 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 
 const Education = () => {
 	return (
-		<section className="section pb-0 bg-gradient-info my-5">
+		<section className="section pb-0 bg-gradient-info my-2">
 			<Container>
 				<div className="d-flex px-3">
 					<div>
@@ -31,21 +31,6 @@ const Education = () => {
 					})}
 				</Row>
 			</Container>
-			<div className="separator separator-bottom separator-skew zindex-100">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					preserveAspectRatio="none"
-					version="1.1"
-					viewBox="0 0 2560 100"
-					x="0"
-					y="0"
-				>
-					<polygon
-						className="fill-white"
-						points="2560 0 2560 100 0 100"
-					/>
-				</svg>
-			</div>
 		</section>
 	);
 };

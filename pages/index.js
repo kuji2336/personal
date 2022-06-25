@@ -19,31 +19,27 @@ export default function Home({ githubProfileData }) {
 		<div>
 			<SEO
 				data={{
-					title: "Hanzla Tauqeer",
+					title: "Kuji Bolkvadze",
 					description:
 						"A passionate Full Stack Web Developer and Blockchain Developer.",
-					image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
-					url: "https://developer-portfolio-1hanzla100.vercel.app",
 					keywords: [
-						"Hanzla",
-						"Hanzla Tauqeer",
-						"@1hanzla100",
-						"1hanzla100",
+						"Kuji",
+						"Kuji Bolkvadze",
 						"Portfolio",
-						"Hanzla Portfolio ",
-						"Hanzla Tauqeer Portfolio",
+						"Kuji Bolkvadze Portfolio ",
+						"Kuji Bolkvadze Portfolio",
 					],
 				}}
 			/>
 			<Navigation />
 			<Greetings />
-			<Skills />
-			<Proficiency />
+			{/* <Skills /> */}
+			{/* <Proficiency /> */}
 			<Education />
 			<Experience />
-			<Feedbacks />
+			<Feedbacks /> 
 			<Projects />
-			<GithubProfileCard prof={githubProfileData} />
+			{/* <GithubProfileCard prof={githubProfileData} /> */}
 		</div>
 	);
 }

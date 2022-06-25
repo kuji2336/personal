@@ -6,9 +6,11 @@ import { Fade } from "react-reveal";
 const EducationCard = ({ education }) => {
 	return (
 		<Fade left duration={2000} >
-			<Card className="card-lift--hover shadow mt-4">
+			<Card className="shadow mt-4">
 				<CardBody>
 					<div className="d-flex px-3">
+						
+						<img src={education.logo.src} className="education-image"/>
 						<div className="pl-4">
 							<h5 className="text-info">
 								{education.schoolName}
@@ -18,13 +20,6 @@ const EducationCard = ({ education }) => {
 								{education.duration}
 							</Badge>
 							<p className="description mt-3">{education.desc}</p>
-							<ul>
-								{education.descBullets
-									? education.descBullets.map((desc) => {
-											return <li key={desc}>{desc}</li>;
-									  })
-									: null}
-							</ul>
 						</div>
 					</div>
 				</CardBody>

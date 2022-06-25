@@ -1,3 +1,55 @@
 body > div:first-child {
 	overflow-x: hidden;
 }
+
+
+html, body{
+	background-color: #231F20;
+}
+
+
+.custom-heading{
+	font-weight: bold;
+    font-size: 50px;
+}
+
+
+.custom-pre{
+	font-weight: bold;
+    font-size: 31px;
+}
+
+.education-image{
+	box-shadow: rgb(50 50 93 / 10%) 0px 15px 35px, rgb(0 0 0 / 7%) 0px 5px 15px;
+    height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.swiper-slide {
+	height: auto !important;
+  }
+
+  .react-reveal{
+	height: 100%;
+  }
+
+  .swiper-container img { height: 200px !important}
+
+
+
+  @media(max-width:991px){
+	.section-shaped{
+		padding-top: 103px;
+	}
+
+	.card-body > .d-flex{
+		flex-wrap: wrap;
+        justify-content: center;
+	}
+
+	.education-image{
+		margin-bottom: 18px;
+	}
+  }

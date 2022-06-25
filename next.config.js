@@ -3,6 +3,6 @@ module.exports = {
 	images: {
 		domains: ["avatars.githubusercontent.com"],
 	},
-	basePath:"/nextjs-pages",
-	assetPrefix:"/nextjs-pages"
+	basePath:"/personal",
+	assetPrefix:"/personal"
 };

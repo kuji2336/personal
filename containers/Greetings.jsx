@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { greetings } from "../portfolio";
-import { Button, Container, Row, Col } from "reactstrap";
+import {  Container, Row, Col } from "reactstrap";
 import bobImage from '../public/img/icons/common/bob.png'
-import SocialLinks from "../components/SocialLinks";
 
 const Greetings = () => {
 	useEffect(() => {

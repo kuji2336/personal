@@ -6,9 +6,8 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper";
 import { projects } from "../portfolio";
-import { Container, Row } from "reactstrap";
+import { Container} from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
-import { Fade } from "react-reveal";
 
 const Projects = () => {
   return (

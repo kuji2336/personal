@@ -1,15 +1,11 @@
 import { feedbacks, stackDetails } from "../portfolio";
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
-import FeedbackCard from "../components/FeedbackCard";
-import { Fade } from "react-reveal";
+import {Container, Row } from "reactstrap";
 import SwiperCore, {Autoplay} from 'swiper/core';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y} from "swiper";
 import Stack from "../components/stackCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-SwiperCore.use([Autoplay,Pagination,Navigation]);
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,6 +13,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Feedbacks = () => {
+  SwiperCore.use([Autoplay,Pagination,Navigation]);
+
   return (
     <section className="section section-lg">
       <Container>

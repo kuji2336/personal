@@ -40,6 +40,14 @@ function SEO({ data }) {
 				sizes="16x16"
 				href="./favicon.png"
 			/>
+			<script async src='https://www.googletagmanager.com/gtag/js?id=G-ELFRGZHGM4' />
+			<script dangerouslySetInnerHTML={{
+            __html:`window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments)}
+			gtag('js', new Date());
+		  
+			gtag('config', 'G-ELFRGZHGM4')`
+			}}  />
 		</Head>
 	);
 }

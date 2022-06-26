@@ -9,16 +9,6 @@ import Script from 'next/script'
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
-			<Script strategy='lazyOnLoad' src='https://www.googletagmanager.com/gtag/js?id=G-ELFRGZHGM4' />
-			<Script strategy='lazyOnLoad'>
-				{
-					` window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-			
-			  gtag('config', 'G-ELFRGZHGM4')`
-				}
-			</Script>
 			<Component {...pageProps} />;
 		</>
 	)

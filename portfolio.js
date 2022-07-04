@@ -10,7 +10,7 @@ import jss from  "./public/img/icons/common/jss.png"
 import reactlogo from  "./public/img/icons/common/reactlogo.png"
 import jquer from  "./public/img/icons/common/jquer.png"
 import ui from  "./public/img/icons/common/ui.png"
-
+import tpscript from  "./public/img/icons/common/type.png"
 export const greetings = {
 	name: "Kuji Bolkvadze",
 	title: "Hi, I'm Kuji",
@@ -326,6 +326,12 @@ export const stackDetails = [
 	{
 		name:'JavaScript (ES6)',
 		logo:jss,
+		details:[
+		]
+	},
+	{
+		name:'TypeScript',
+		logo:tpscript,
 		details:[
 		]
 	},
